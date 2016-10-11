@@ -87,6 +87,9 @@ WHERE InvoiceLine.InvoiceId = 37
 
 14. Provide a query that shows the # of invoices per country. HINT: [GROUP BY](http://www.sqlite.org/lang_select.html#resultset)
 
+## SELECT COUNT(Invoice.BillingCountry) AS "Total Invoices", Invoice.BillingCountry FROM Invoice
+## GROUP BY(Invoice.BillingCountry)
+
 15. Provide a query that shows the total number of tracks in each playlist. The Playlist name should be include on the resultant table.
 
 16. Provide a query that shows all the Tracks, but displays no IDs. The resultant table should include the Album name, Media type and Genre.
