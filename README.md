@@ -20,6 +20,9 @@
 
 4. Provide a query showing only the Employees who are Sales Agents.
 
+## SELECT FirstName || ' ' || LastName AS "FullName" FROM Employee
+## WHERE Employee.Title = "Sales Support Agent";
+
 5. Provide a query showing a unique list of billing countries from the Invoice table.
 
 6. Provide a query showing the invoices of customers who are from Brazil.
