@@ -32,6 +32,9 @@
 
 6. Provide a query showing the invoices of customers who are from Brazil.
 
+## SELECT FirstName || ' ' || LastName AS "FullName", Invoice.* FROM Customer
+## JOIN Invoice ON Customer.CustomerId = Invoice.CustomerId
+
 7. Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
 
 8. Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
