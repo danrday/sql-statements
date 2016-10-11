@@ -37,6 +37,12 @@
 
 7. Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
 
+## SELECT Employee.FirstName || ' ' || Employee.LastName AS "FullName", Invoice.* FROM Employee
+## JOIN Customer ON Employee.EmployeeId = Customer.SupportRepId
+## JOIN Invoice ON Customer.CustomerId = Invoice.CustomerId
+## WHERE Employee.Title = "Sales Support Agent"
+
+
 8. Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 
 9. How many Invoices were there in 2009 and 2011? What are the respective total sales for each of those years?
