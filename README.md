@@ -25,6 +25,11 @@
 
 5. Provide a query showing a unique list of billing countries from the Invoice table.
 
+## SELECT BillingCountry FROM Invoice
+## GROUP BY BillingCountry
+## ORDER BY BillingCountry ASC;
+
+
 6. Provide a query showing the invoices of customers who are from Brazil.
 
 7. Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
