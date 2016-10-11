@@ -66,6 +66,9 @@ AND Invoice.InvoiceDate > '2012-01-01 00:00:00'
 
 10. Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
 
+## SELECT InvoiceLine.InvoiceId, sum(InvoiceLine.Quantity) AS "Total Items" from InvoiceLine
+WHERE InvoiceLine.InvoiceId = 37
+
 11. Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for each Invoice. HINT: [GROUP BY](http://www.sqlite.org/lang_select.html#resultset)
 
 12. Provide a query that includes the track name with each invoice line item.
