@@ -45,6 +45,9 @@
 
 8. Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
 
+## SELECT Invoice.Total, Invoice.BillingCountry, Customer.FirstName || ' ' || Customer.LastName AS "CustomerName", Employee.FirstName || ' ' || Employee.LastName AS "SalesAgent" FROM Invoice, Customer
+## JOIN Employee ON Customer.SupportRepId = EmployeeId
+
 9. How many Invoices were there in 2009 and 2011? What are the respective total sales for each of those years?
 
 10. Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
