@@ -50,6 +50,20 @@
 
 9. How many Invoices were there in 2009 and 2011? What are the respective total sales for each of those years?
 
+a. SELECT sum(Invoice.Total), Invoice.InvoiceDate FROM Invoice
+WHERE Invoice.InvoiceDate < '2010-01-01 00:00:00'
+
+##83
+
+b.
+
+SELECT sum(Invoice.Total), Invoice.InvoiceDate FROM Invoice
+WHERE Invoice.InvoiceDate > '2011-01-01 00:00:00'
+AND Invoice.InvoiceDate > '2012-01-01 00:00:00'
+
+##163
+
+
 10. Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37.
 
 11. Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for each Invoice. HINT: [GROUP BY](http://www.sqlite.org/lang_select.html#resultset)
